@@ -29,3 +29,6 @@ management:
 token:
  expiration-time: 86400012 # ms단위 60*60*24 * 1000 = 하루
  secret: '{cipher}AQA25HsfLM7kOwBt8qhyoctgbSYEAJVSECu6XEHiYoxMU4a/LDGqszfcrXWNxjPys4KwW8B152y+5Rl0ZOTTCKeMSiVNEMhgSbbzJbDUqXiOGpSbWMmqxNAkPbkag/CEjojxlYN4TR+RYo/e+zb1oqpUQUvHIDc4xbXbK5J6tG0Ds52A+5p0ZS/LDxSP0iPbznCA4fPYRrymF1IuVyLyEtVpYcS7OKGTCpIDXMioqqbO/qZfMflaXPNiVuajwi6be3p367ivIXFE5KmYbHeGsa8KRlw5IHV2FNe3V8HgMN9FLa2zzQfmh1zrkoS7udD8/50ekYrqi3P+kKMeEJmgjqVsBSL6I/4Jz+sbADmLf9Ws00BaFfrZqtuO1qzOxvTx1UE=' # 토큰이 만들어질 때 반영됨
+
+order_service:
+  url: http://127.0.0.1:8000/order-service/%s/orders
