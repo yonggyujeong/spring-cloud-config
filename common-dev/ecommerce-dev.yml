@@ -17,7 +17,8 @@ eureka:
 logging:
   level:
     #org.apache.coyote.http11: debug
-    com.example.userserivce: DEBUG # 디버그 모드 부터 출력
+    #com.example.userserivce: DEBUG # 디버그 모드 부터 출력
+    com.example.userserivce.client: DEBUG # feign client로그만 출력목적
 
 # actuator end 포인트
 management:
