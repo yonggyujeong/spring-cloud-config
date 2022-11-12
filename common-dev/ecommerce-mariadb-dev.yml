@@ -1,0 +1,12 @@
+spring:
+  h2:
+    console:
+      enabled: true # 콘솔 접속
+      settings:
+        web-allow-others: true # 웹 외부 접속
+      path: /h2-console # 콘솔사용 주소
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/mydb
+    username: root
+    password: '{cipher}AQB+0YMEWFjdRAGcQIIwrIbd8+dXXdFtp/ojz6bew3en3ShlPEjELlvoWbzrL/OE8kTz+YkE39bctquA2Ofw0z4ozZ7wt2TH/4MQynLiYRu2MvTIOzHBwAKlr2DQM6OX+2Z/8c/D5R9rGCSO4trPiPIkW/Ic4FgvzJxjqaMR5InU3Aop7Z6noecykZDHMibMA/LrEpWPmA8ENk4ejrw3dUR6Hp4ztKF4UhF8Oe00jbkyi8zs29xMpTyUkw4QUVNwRFdK+t+eYyIftE/dCEioHw96K7UkI+YVDuDcodf93AK9KF4J5wMRE3aclYCOVTCbbWvfr2WAIVICj2dpiQQ1q/s39aDFkY7uaZ7x0nQ9QG1eXhZ3K8VGYZN23AS5scUD4c0='
