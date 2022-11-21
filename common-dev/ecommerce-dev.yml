@@ -25,7 +25,7 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh, health, beans, busrefresh, env
+        include: refresh, health, beans, busrefresh, env, info, metrics, prometeus
 
 token:
  expiration-time: 86400012 # ms단위 60*60*24 * 1000 = 하루
@@ -33,3 +33,5 @@ token:
 
 order_service:
   url: http://127.0.0.1:8000/order-service/%s/orders
+  exception:
+    order_is_empty_message: "user's order is empty"
